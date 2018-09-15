@@ -1,20 +1,20 @@
-package ru.rougsig.funwithanimations.home
+package ru.rougsig.funwithanimations.simplesharedelement
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.home_controller.*
 import ru.rougsig.funwithanimations.R
 import ru.rougsig.funwithanimations.base.BaseController
 
-class HomeController : BaseController() {
+class SimpleSharedElementController : BaseController() {
 
   override fun inflateView(inflater: LayoutInflater, container: ViewGroup): View {
-    return inflater.inflate(R.layout.home_controller, container, false)
+    return inflater.inflate(R.layout.simple_shared_element_controller, container, false)
   }
 
   override fun onViewBound(view: View) {
-    super.onViewBound(view)
-    recycler_view.setControllerAndBuildModels(HomeEpoxyController(router))
+    view.setOnClickListener {
+      router.popCurrentController()
+    }
   }
 }

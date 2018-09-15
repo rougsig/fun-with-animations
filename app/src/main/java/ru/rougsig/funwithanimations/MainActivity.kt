@@ -14,13 +14,16 @@ class MainActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
 
-    router = Conductor.attachRouter(this, root, savedInstanceState)
+    setContentView(R.layout.activity_main)
+    router = Conductor.attachRouter(this, controller_container, savedInstanceState)
     if (!router.hasRootController()) router.setRoot(RouterTransaction.with(HomeController()))
   }
 
   override fun onBackPressed() {
-    if (!router.handleBack()) super.onBackPressed()
+    if (!router.handleBack()) {
+      super.onBackPressed()
+    }
   }
+
 }
