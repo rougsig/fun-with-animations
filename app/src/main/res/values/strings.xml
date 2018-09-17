@@ -4,4 +4,6 @@
 
     <string name="transition_simple_shared_element">transition_simple_shared_element</string>
     <string name="simple_shared_element">Simple Shared Element</string>
+
+    <string name="shop_card">Shop Card</string>
 </resources>
