@@ -53,6 +53,8 @@ class ShopCardController : BaseController() {
     shop_card_card.setOnClickListener {
       if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
         ShopCardDetailsController.createAndShow(router)
+      } else if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
       }
     }
 
