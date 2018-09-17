@@ -8,4 +8,7 @@
 	<string name="shop_card">Shop Card</string>
 	<string name="hide">Hide</string>
 	<string name="show">Show</string>
+	<string name="card">card</string>
+	<string name="transition_shop_card">transition_simple_shared_element</string>
+	<string name="love">love</string>
 </resources>

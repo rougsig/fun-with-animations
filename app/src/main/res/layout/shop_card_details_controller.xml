@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginLeft="16dp"
+	android:layout_marginRight="16dp"
+	android:orientation="vertical">
+
+	<ImageView
+		android:id="@+id/shop_card_details_close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:padding="8dp"
+		android:src="@drawable/ic_close" />
+
+	<TextView
+		android:id="@+id/shop_card_card"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:layout_marginBottom="24dp"
+		android:layout_marginTop="24dp"
+		android:background="@drawable/bg_accent_radius_8dp"
+		android:gravity="center"
+		android:text="@string/card"
+		android:textColor="@android:color/white"
+		android:transitionName="@string/transition_shop_card" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:drawableLeft="@drawable/ic_favorite"
+		android:drawablePadding="8dp"
+		android:text="@string/love" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:drawableLeft="@drawable/ic_favorite"
+		android:drawablePadding="8dp"
+		android:text="@string/love" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:drawableLeft="@drawable/ic_favorite"
+		android:drawablePadding="8dp"
+		android:text="@string/love" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:drawableLeft="@drawable/ic_favorite"
+		android:drawablePadding="8dp"
+		android:text="@string/love" />
+</LinearLayout>

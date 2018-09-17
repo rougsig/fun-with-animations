@@ -45,15 +45,14 @@ class ShopCardController : BaseController() {
     }
 
     shop_card_bottom_sheet.setOnClickListener {
-      val bottomSheetState = bottomSheetBehavior.state
+      if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
+        bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+      }
+    }
 
-      when (bottomSheetState) {
-        BottomSheetBehavior.STATE_COLLAPSED -> {
-          bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-        }
-        BottomSheetBehavior.STATE_EXPANDED -> {
-
-        }
+    shop_card_card.setOnClickListener {
+      if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED) {
+        ShopCardDetailsController.createAndShow(router)
       }
     }
 

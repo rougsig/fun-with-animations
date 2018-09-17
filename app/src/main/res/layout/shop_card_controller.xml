@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:gravity="center_horizontal"
@@ -14,7 +15,8 @@
 		android:gravity="center_vertical"
 		android:paddingStart="16dp"
 		android:text="@string/shop_card"
-		android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+		android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+		tools:ignore="RtlSymmetry" />
 
 	<FrameLayout
 		android:layout_width="match_parent"
@@ -60,6 +62,7 @@
 		app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
 
 		<TextView
+			android:transitionName="@string/transition_shop_card"
 			android:id="@+id/shop_card_card"
 			android:layout_width="match_parent"
 			android:layout_height="200dp"
@@ -67,7 +70,7 @@
 			android:layout_marginRight="16dp"
 			android:background="@drawable/bg_accent_radius_8dp"
 			android:gravity="center"
-			android:text="card"
+			android:text="@string/card"
 			android:textColor="@android:color/white" />
 
 		<View
