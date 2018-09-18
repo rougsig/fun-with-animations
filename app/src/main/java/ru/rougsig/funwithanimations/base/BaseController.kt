@@ -4,14 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import com.bluelinelabs.conductor.Controller
-
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.*
 
 abstract class BaseController : Controller, LayoutContainer {
-
   private var bindPropsRootView: View? = null
 
   protected constructor()
